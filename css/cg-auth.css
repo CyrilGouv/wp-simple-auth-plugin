@@ -1,0 +1,87 @@
+#cg-auth-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#cg-auth-form .auth-btn {
+    margin: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#cg-auth-form .auth-btn.hide {
+    display: none;
+}
+
+#cg-auth-form .auth-container {
+    transition: transform 200ms ease;
+    transform: translateX(300px);
+    width: 220px;
+    margin: 20px;
+    position: relative;
+    background-color: #ddd;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px -10px rgba(0,0,0,.35);
+}
+
+#cg-auth-form .auth-container.show {
+    transform: translateX(0);
+}
+
+#cg-auth-form h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 0;
+    font-size: 16px;
+}
+
+#cg-auth-form .close {
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    font-size: 16px;
+}
+
+#cg-auth-form label {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+#cg-auth-form input[type="password"],
+#cg-auth-form input[type="text"] {
+    margin-bottom: 10px;
+    padding: 4px;
+    font-size: 12px;
+}
+
+#cg-auth-form .actions {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#cg-auth-form .actions a {
+    font-size: 10px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0 4px;
+}
+
+#cg-auth-form .status {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#cg-auth-form .status.error {
+    color: brown;
+}
+
+#cg-auth-form .status.success {
+    color: green;
+}
